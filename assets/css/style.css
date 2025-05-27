@@ -163,6 +163,17 @@ h2 {
   #alerta {
     width: 90%;
     font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  #alerta input{
+    padding: 1.5rem 0;
+    font-size: 1rem;
+  }
+
+  #alerta button{
+    margin: 10px 0;
+    padding: 1.5rem 0;
   }
 
   #legenda {

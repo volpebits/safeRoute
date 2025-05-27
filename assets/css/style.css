@@ -147,4 +147,10 @@ h2 {
   #legenda div {
     padding: 0.3rem;
   }
+
+  #sidebar{
+    max-height: 80vh;
+  }
+
+
 }

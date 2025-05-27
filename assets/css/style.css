@@ -29,7 +29,7 @@ h2 {
 }
 
 #map {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
   height: 60vh;
   width: 60vw;
 }
@@ -61,7 +61,7 @@ h2 {
   background: #ffdddd;
   padding: 10px;
   border: 2px solid red;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   z-index: 1000;
 }
@@ -92,7 +92,7 @@ h2 {
   padding: 12px;
   border-radius: 8px;
   font-size: 14px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
   z-index: 1000;
 }
 
@@ -137,10 +137,14 @@ h2 {
 
   h1 {
     padding: 1rem;
+    width: 90%;
+    text-align: center;
   }
 
   h2 {
     padding: 1rem;
+    width: 90%;
+    margin: 10px auto;
   }
 
   #legenda div {
@@ -156,12 +160,14 @@ h2 {
     gap: 20px;
   }
 
-  #alerta{
-    width: 80%;
+  #alerta {
+    width: 90%;
+    font-size: 1.5rem;
   }
 
-  #legenda{
-    width: 80%;
+  #legenda {
+    width: 90%;
+    font-size: 1.5rem;
   }
 
 }

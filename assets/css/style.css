@@ -71,15 +71,20 @@ h2 {
   background-color: aliceblue;
   width: 100%;
   padding: 5px 0;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 1rem;
 }
 
 #alerta button {
   border-radius: 10px;
-  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
   background-color: green;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
   color: white;
+  padding: 0.4rem;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 /* legenda */
@@ -168,11 +173,11 @@ h2 {
 
   #alerta input{
     padding: 1.5rem 0;
-    font-size: 1rem;
   }
 
   #alerta button{
     margin: 10px 0;
+    font-size: 1.5rem;
     padding: 1.5rem 0;
   }
 

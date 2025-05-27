@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>SafeRoute - Rotas Seguras em Enchentes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>SafeRoute</h1>
+    <h2>### 🌧️ SafeRoute – Rotas seguras em enchentes
+      Em momentos de alagamento, cada segundo conta. O SafeRoute mostra **rotas seguras**, **abrigos próximos** e envia
+      **alertas** para te manter protegido. Navegue pelo mapa e fique um passo à frente do perigo.
+    </h2>
+    <div class="container-map">
+      <div id="sidebar">
+        <h2>Abrigos Próximos</h2>
+        <ul id="abrigos-list"></ul>
+      </div>
+      <div id="map"></div>
+    </div>
+    <div class="cards">
+      <div id="legenda">
+        <h4>Legenda</h4>
+        <div><span class="cor ponto-critico"></span> Ponto Crítico de Alagamento</div>
+        <div><span class="cor rota-segura"></span> Rota Segura</div>
+        <div class="abrigo" ><img src="https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png" alt="Abrigo"> Abrigo</div>
+      </div>
+      <div id="alerta">
+        <p><strong>⚠️ Alerta:</strong> Risco de enchente nas próximas 24h</p>
+        <input type="tel" id="whatsapp" placeholder="(xx)9xxxx-xxxx" />
+        <button onclick="receberAlerta()">Receber Notificação</button>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

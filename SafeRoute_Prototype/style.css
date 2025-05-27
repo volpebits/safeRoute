@@ -1,0 +1,150 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: beige;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.container-map {
+  margin: 0 auto;
+}
+
+#map {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 60vh;
+  width: 60vw;
+}
+
+#sidebar {
+  position: absolute;
+  background: white;
+  margin: 2px 0px 0px 2px;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  max-height: 40vh;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cards {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#alerta {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffdddd;
+  padding: 10px;
+  border: 2px solid red;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+#alerta input {
+  margin: 5px auto;
+  background-color:aliceblue;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+#alerta button{
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+}
+
+/* legenda */
+#legenda {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#legenda h4 {
+  margin-top: 0;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#legenda .cor {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.ponto-critico {
+  background-color: red;
+}
+
+.rota-segura {
+  background-color: blue;
+}
+
+.abrigo img{
+  width: 20px; 
+  vertical-align: middle; 
+  margin-right: 6px;
+}
+
+@media (max-width: 1000px) {
+
+  .container {
+    width: 100%;
+  }
+
+  #map {
+    height: 90vh;
+    width: 90vw;
+  }
+
+  h1 {
+    padding: 1rem;
+  }
+
+  h2 {
+    padding: 1rem;
+  }
+
+  #legenda div {
+    padding: 0.3rem;
+  }
+}

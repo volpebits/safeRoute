@@ -13,10 +13,13 @@
 
 <body>
     <!-- Header -->
-    <div class="header">
-        <nav class="navbar bg-blue">
-            <div class="nav container-fluid px-2">
-                <a class="navbar-brand fw-bold" href="/index.html">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+            <div class="container-fluid">
+
+                <!-- Nome do projeto alinhado à esquerda -->
+                <a class="navbar-brand text-warning" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                         class="drop bi bi-droplet-half text-light" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -24,49 +27,38 @@
                         <path fill-rule="evenodd"
                             d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z" />
                     </svg>
-                    <span class="title text-warning">SafeRoute</span>
+                    SafeRoute
                 </a>
-                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                <!-- Botão hambúrguer no lado direito -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="title offcanvas-title fw-bold text" id="offcanvasNavbarLabel">SafeRoute</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/assets/pages/mapas.html">Mapas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/assets/pages/clima.html">Clima</a>
-                            </li>
-                            <div class="search">
-                                <form class="d-flex mt-2" role="search">
-                                    <input class="form-control me-2 border border-2 border-warning" type="search"
-                                        placeholder="Buscar" aria-label="Search" />
-                                    <button class="btn border border-2 border-warning" type="submit">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path
-                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                        </svg>
-                                    </button>
-                                </form>
-                            </div>
-                            <button onclick="receberAlerta()" class="btn-alert btn btn-warning mt-2 text-blue">Receber
-                                Alertas</button>
-                    </div>
+
+                <!-- Menu colapsável -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <!-- Itens do menu -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/assets/pages/mapas.html">Mapas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/assets/pages/clima.html">Clima</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="receberAlerta()" class="btn btn-warning" href="#">Receber alertas</a>
+                        </li>
+                    </ul>
                 </div>
+
             </div>
         </nav>
-    </div>
+    </header>
     <!-- Fim Header -->
 
     <div class="container vh-100"></div>

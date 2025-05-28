@@ -1,0 +1,107 @@
+.clima-main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+    color: #ffc107;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 25px rgba(255, 193, 7, 0.8);
+}
+
+.card-title {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.temp {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.description {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.weather-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.weather-details li {
+    margin-bottom: 0.3rem;
+}
+
+/* Card alerta - estilo especial */
+.alerta-card {
+    background-color: #661010;
+    box-shadow: 0 0 20px rgba(255, 69, 69, 0.8);
+    color: #ff6b6b;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+}
+
+.alert-text {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-alert {
+    font-weight: 700;
+    color: #661010;
+    background-color: #ffc107;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-alert:hover {
+    background-color: #e6b800;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .temp {
+        font-size: 2rem;
+    }
+
+    .weather-icon {
+        width: 60px;
+        height: 60px;
+    }
+}

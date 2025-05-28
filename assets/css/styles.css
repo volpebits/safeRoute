@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
 .bg-blue {
     background-color: #02265c;
 }
@@ -29,9 +39,88 @@ footer h2 {
     font-size: 1rem;
 }
 
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #02265c;
+    padding: 1rem 1.5rem;
+    color: white;
+    position: relative;
+}
+
+/* Título da página */
+.header__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Botão hambúrguer */
+.header__hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Menu */
+.header__menu {
+    position: absolute;
+    top: 100%;
+    right: 1.5rem;
+    background-color: #02265c;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    min-width: 150px;
+    z-index: 1000;
+}
+
+/* Lista do menu */
+.header__menu ul {
+    padding: 1rem;
+    list-style: none;
+}
+
+.header__menu li {
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.header__menu li:last-child {
+    border-bottom: none;
+}
+
+.header__menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.header__menu a:hover,
+.header__menu a:focus {
+    background-color: #555;
+    outline: none;
+}
+
+/* Esconder menu por padrão */
+.header__menu[hidden] {
+    display: none;
+}
+
+/* fim header */
+
 @media(max-width:1000px) {
     .icons {
         width: 90%;
         padding: 2rem;
     }
+
+    .header__menu {
+        right: 0rem;
+    }
+
 }

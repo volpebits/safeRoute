@@ -97,3 +97,5 @@ function receberAlerta() {
   alert(`Número ${numero} cadastrado! Você receberá notificações.`);
 }
 
+
+

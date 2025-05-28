@@ -50,7 +50,7 @@ const rotaSegura = [
   [-23.5680, -46.5880]  // Rua Ibitirama (altura menos crítica)
 ];
 
-L.polyline(rotaSegura, { color: 'blue' }).addTo(map)
+L.polyline(rotaSegura, { color: 'green' }).addTo(map)
   .bindPopup("Rota segura");
 
 L.polyline(rotaAfetada, { color: 'red' }).addTo(map)
@@ -89,12 +89,11 @@ abrigos.forEach(a => {
 });
 
 function receberAlerta() {
-  const numero = document.getElementById("whatsapp").value.trim();
-
-  if (!numero || numero.length < 10) {
-    alert("Por favor, insira um número de WhatsApp válido com DDD.");
+  const numero = prompt("Digite seu número de WhatsApp com DDD:");
+  if (!numero || numero.trim().length < 10) {
+    alert("Número inválido! Por favor, tente de novo.");
     return;
   }
-
   alert(`Número ${numero} cadastrado! Você receberá notificações.`);
 }
+
